@@ -68,7 +68,7 @@ main section {
 
 /* Tamanho base de cada cartão */
 .cartao {
-    width: 315px; /* Largura fixa para o cartão */
+    width: 300px; /* Largura fixa para o cartão */
     height: 300px;
     perspective: 1000px; /* Efeito 3D para quando passar o mouse */
 }
@@ -163,7 +163,7 @@ main section {
 
 .gradient-text {
   font-family: Garamond;
-  font-size: 4vw;
+  font-size: 10vw;
   text-align: center;
   color: #440505;
   background: linear-gradient(98.54deg, blue 25%, yellow 37%, lightgray 38%, green 65%, darkred 5%);
