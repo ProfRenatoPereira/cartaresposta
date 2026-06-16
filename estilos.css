@@ -68,7 +68,7 @@ main section {
 
 /* Tamanho base de cada cartão */
 .cartao {
-    width: 22vw; /* Largura fixa para o cartão */
+    width: 315px; /* Largura fixa para o cartão */
     height: 300px;
     perspective: 1000px; /* Efeito 3D para quando passar o mouse */
 }
@@ -157,5 +157,35 @@ main section {
         /* Altera para 1 coluna */
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+}
+
+
+
+.titulo-digitando {
+    font-family: monospace;
+    font-size: 5vw;
+    color: var(--vermelho); 
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: px solid;
+    width: 1;
+    animation: typing 6s steps(30, end) infinite, blink 1s infinite;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50%, 100% {
+        width: 100%; /* Expande o tamanho até preencher todo o texto */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
     }
 }
