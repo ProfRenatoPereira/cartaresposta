@@ -165,6 +165,7 @@ main section {
 .titulo-digitando {
     font-family: monospace;
     font-size: 5vw;
+    text-align: center;
     color: var(--vermelho); 
     overflow: hidden;
     white-space: nowrap;
