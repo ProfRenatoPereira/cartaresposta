@@ -128,3 +128,34 @@ main section {
     .zoom-imagem:hover .cartao-imagem {
         transform: scale(1.2); /* Zoom de 20% ao passar o mouse */
     }
+
+
+
+
+/* Configuração base da Section */
+main section {
+    display: grid;
+    /* No desktop, divide o espaço em 4 colunas iguais */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Configuração base dos cartões */
+.cartao {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Para telas menores (Celular) */
+@media (max-width: 768px) {
+    main section {
+        /* Altera para 1 coluna */
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
