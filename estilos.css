@@ -162,18 +162,24 @@ main section {
 
 
 
+/* Adicione isso para o elemento pai */
+.container-pai {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (opcional) */
+    width: 100%;
+}
+
+/* Seu código corrigido */
 .titulo-digitando {
     font-family: monospace;
     font-size: 5vw;
-    text-align: center;
     color: var(--vermelho); 
     overflow: hidden;
     white-space: nowrap;
-    border-right: px solid;
-    width: 1;
-    animation: typing 6s steps(30, center) infinite, blink 1s infinite;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    border-right: 3px solid; /* Corrigido: adicionado valor em px */
+    width: max-content;      /* Corrigido: se adapta exatamente ao tamanho do texto */
+    animation: typing 6s steps(30, end) infinite, blink 1s infinite;
 }
 
 @keyframes typing {
