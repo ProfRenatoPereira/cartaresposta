@@ -63,7 +63,7 @@ hr {
   color: rgb(247, 248, 247);
   vertical-align: displayHeight;
   height: height;
-  width: displayWidth;
+  width: 100vw;
 }
 
 
