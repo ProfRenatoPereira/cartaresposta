@@ -74,7 +74,7 @@ main section {
 /* Tamanho base de cada cartão */
 .cartao {
     width: 300px; /* Largura fixa para o cartão */
-    height: 300px;
+    height: 330px;
     perspective: 1000px; /* Efeito 3D para quando passar o mouse */
 }
 
