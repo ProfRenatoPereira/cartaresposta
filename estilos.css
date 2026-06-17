@@ -19,7 +19,7 @@
     position: relative; /* ou fixed/absolute */
     z-index: 9999; /* Um valor alto para ficar por cima */
     width: 100vw;
-    height: 5vw;
+    height: 10vw;
 }
 
 body {
